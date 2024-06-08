@@ -7,6 +7,7 @@ const Reply = require('../models/Reply')
 // @desc    Get comments
 // @route   GET /api/v1/replies
 // @access  Public
+
 exports.getReplies = asyncHandler(async (req, res, next) => {
   res.status(200).json(res.advancedResults)
 })
